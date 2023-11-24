@@ -1,6 +1,7 @@
 import "./App.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import ImageSlider from "./ImageSlider";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
         <ParallaxLayer offset={0} speed={1.2}>
           <div className="centered-text flex items-center justify-center ">
             <h1 className=" font-bold text-slate-50 font-serif text-6xl py-56 ">
-              PARALLAX EFFECT
-              <p className="text-sm px-52 py-9">welcome to new ones</p>
+              WELCOME TO
+              <p className="text-sm px-40 py-9">Parallex Effects</p>
             </h1>
           </div>
         </ParallaxLayer>
@@ -44,8 +45,10 @@ function App() {
         </ParallaxLayer>
       </Parallax>
       {/* image slider */}
+
       <div>
         <ImageSlider />
+        <Slider />
       </div>
     </>
   );
